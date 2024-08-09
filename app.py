@@ -92,3 +92,7 @@ if __name__ == "__main__":
             )
         else:
             mlflow.sklearn.log_model(lr, "model", signature=signature)
+
+        # Open Dagshub repository in the browser
+        dagshub_url = "https://dagshub.com/MonicaLimbachia/ProjectsWithMLFlow"
+        webbrowser.open(dagshub_url)
